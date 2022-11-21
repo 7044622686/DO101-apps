@@ -2,7 +2,7 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello GSS-MN-P...!!!\n');
+  res.send('Hello NOKIA-GSS-MN-P...!!!\n');
 });
 
 app.listen(8080, function () {
