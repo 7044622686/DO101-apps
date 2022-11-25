@@ -1,4 +1,3 @@
-<body>
         <div>
             <h1>Add two number using text box as input using javascript</h1>
         </div>
@@ -27,5 +26,3 @@
         }
 
         </script>
-
-</body>
