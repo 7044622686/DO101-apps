@@ -1,11 +1,20 @@
-var express = require('express');
-app = express();
-
-app.get('/', function (req, res) {
-  res.send('Hello NOKIA-GSS-MN-P_Sourav...!!!\n');
-});
-
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
-});
-
+html>  
+<body>  
+<form method="post">  
+Enter First Number:  
+<input type="number" name="number1" /><br><br>  
+Enter Second Number:  
+<input type="number" name="number2" /><br><br>  
+<input  type="submit" name="submit" value="Add">  
+</form>  
+<?php  
+    if(isset($_POST['submit']))  
+    {  
+        $number1 = $_POST['number1'];  
+        $number2 = $_POST['number2'];  
+        $sum =  $number1+$number2;     
+echo "The sum of $number1 and $number2 is: ".$sum;   
+}  
+?>  
+</body>  
+</html>
