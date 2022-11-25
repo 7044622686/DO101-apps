@@ -1,22 +1,17 @@
-        <div>
-            <h1>Add two number using text box as input using javascript</h1>
-        </div>
-
-            Enter First Number : <br>
+            Enter First Number :
             <input type="text" id="Text1" name="TextBox1">
-            </br>
+            
 
-            Enter Second Number : <br>
+            Enter Second Number :
             <input type="text" id="Text2" name="TextBox2">
-            </br>
+            
 
-            Result : <br>
+            Result :
             <input type="text" id="txtresult" name="TextBox3">
-            </br>
+            
 
          <input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
 
-        <script type="text/javascript">
 
         function add_number() {
             var first_number = parseInt(document.getElementById("Text1").value);
@@ -24,5 +19,3 @@
             var result = first_number + second_number;
             document.getElementById("txtresult").value = result;
         }
-
-        </script>
