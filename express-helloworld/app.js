@@ -1,29 +1,23 @@
+<!doctype html>
 <html>
+<head>
+<script>
+function add()
+{
+  var numOne, numTwo, sum;
+  numOne = parseInt(document.getElementById("first").value);
+  numTwo = parseInt(document.getElementById("second").value);
+  sum = numOne + numTwo;
+  document.getElementById("answer").value = sum;
+}
+</script>
+</head>
 <body>
-    <div>
-        First Number : <br>
-        <input type="text" id="text1">
-        <br>
-        Second Number : <br>
-        <input type="text" id="text2">
-        <br>
-        Result : <br>
-        <input type="text" id="res">
-        <br>
-        <input type="button" value="Display Result" onclick="addNumber()">
-    </div>
 
-        <script>
+<p>Enter the First Number: <input id="first"></p>
+<p>Enter the Second Number: <input id="second"></p>
+<button onclick="add()">Add</button>
+<p>Sum = <input id="answer"></p>
 
-            function addNumber(){
-                var f_num = parseInt(document.getElementById("text1").value);
-                var s_num = parseInt(document.getElementById("text2").value);
-
-                var sum = f_num + s_num;
-
-                document.getElementById("res").value = sum;  
-
-            }
-        </script>
-    </body>
+</body>
 </html>
