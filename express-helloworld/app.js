@@ -1,24 +1,10 @@
-            Enter First Number : <br>
-            <input type="text" id="Text1" name="TextBox1">
-            <br>
+var express = require('express');
+app = express();
 
-            Enter Second Number : <br>
-            <input type="text" id="Text2" name="TextBox2">
-            <br>
+app.get('/', function (req, res) {
+  res.send('Hello NOKIA-GSS-MN-P_BASU_KAUSHIK...!!!\n');
+});
 
-            Result : <br>
-            <input type="text" id="txtresult" name="TextBox3">
-            <br>
-
-         <input type="button" name="clickbtn" value="Display Result" onclick="add_number()">
-
-        <script type="text/javascript">
-
-        function add_number() {
-            var first_number = parseInt(document.getElementById("Text1").value);
-            var second_number = parseInt(document.getElementById("Text2").value);
-            var result = first_number + second_number;
-            document.getElementById("txtresult").value = result;
-        }
-
-        </script>
+app.listen(8080, function () {
+  console.log('Example app listening on port 8080!');
+});
